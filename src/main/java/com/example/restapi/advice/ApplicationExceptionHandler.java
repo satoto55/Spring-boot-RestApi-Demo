@@ -25,7 +25,7 @@ public class ApplicationExceptionHandler {
         ex.getBindingResult().getFieldErrors().forEach(error ->
                 { errorMap.put(error.getField(),error.getDefaultMessage());
                 });
-        validateAdviceForm.setInvalid_params(errorMap);
+        validateAdviceForm.setInvalidParams(errorMap);
         return validateAdviceForm;
     }
 

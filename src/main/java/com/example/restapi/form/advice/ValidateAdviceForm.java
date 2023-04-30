@@ -12,5 +12,5 @@ public class ValidateAdviceForm {
 
     private String message;
 
-    private Map<String,String> invalid_params = new HashMap<>();
+    private Map<String,String> invalidParams = new HashMap<>();
 }
