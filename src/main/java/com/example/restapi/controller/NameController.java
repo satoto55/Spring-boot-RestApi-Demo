@@ -15,8 +15,8 @@ import java.util.Map;
 public class NameController {
 
     @GetMapping("/names")
-    public List<String> getNames(@RequestParam(name = "name", required = false,defaultValue = "null") String name
-            ,@RequestParam(name = "birthday", required = false,defaultValue = "null") String birthday){
+    public List<String> getNames(@RequestParam(name = "name", required = false,defaultValue = "") String name
+            ,@RequestParam(name = "birthday", required = false,defaultValue = "") String birthday){
 
         return List.of(name,birthday);
     }
